@@ -75,7 +75,7 @@ For Software:
 
 ### Project Demo
 # Video
-![SpendWise Dashboard](static/images/Demo-video%20-%20Made%20with%20Clipchamp.mp4)
+[Watch the video](https://drive.google.com/drive/folders/1XXNvtNAlnHZco-24vPHDr3tt5L1WI0Sn?usp=sharing)
 *Explain what the video demonstrates*
 ---
 Made with ❤️ at TinkerHub
