@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Smart Student Wallet</title>
+    <link href="{% static 'css/globals.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Container for the Dashboard -->
+    
+    <aside class="nav-dash">
+        <p>Spend Wise</p>
+        <a href="{% url 'profile' %}"><img src="{% static 'images/user.png' %}" alt="" title="Profile"></a>
+        <a href="{% url 'budget' %}"><img src="{% static 'images/pie-chart.png' %}" alt="" title="Budget Planner"></a>
+        <a href="{% url 'logout' %}"><img src="{% static 'images/logout.png' %}" alt="" title="Logout"></a>
+    </aside>
+
+    <div class="dashboard-container">
+
+        <!-- Wallet Overview Section -->
+        <section id="wallet-overview" class="wallet-overview">
+            <div id="row1">
+                <h2>Wallet <br>Overview</h2>
+                <div class="wallet-summary">
+                    {% if exp %}
+                    <div class="wallet-item">
+                        <img src="{% static 'images/like.png' %}" alt="">
+                        <div>
+                            <h3>₹{{exp.current_balance}}</h3>
+                            <p>Current Balance</p>
+                        </div>
+                    </div>
+                    <div class="wallet-item">
+                        <img src="{% static 'images/on-time.png' %}" alt="">
+                        <div>
+                            <h3>₹{{exp.current_month_spend}}</h3>
+                            <p>Total Expenses (Month)</p>
+                        </div>
+                    </div>
+                    <div class="wallet-item">
+                        <img src="{% static 'images/bookmark.png' %}" alt="">
+                        <div>
+                            <h3>₹{{exp.current_month_recieved}}</h3>
+                            <p>Total Savings</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- AI Suggestion Banner -->
+            <div class="ai-suggestion">
+                <p><strong>AI Suggestion:</strong> "You spent ₹3,000 on food this month! Try cooking at home to save
+                    ₹1,000!"</p>
+            </div>
+        </section>
+        <!-- AI Spending Insights Section -->
+        <section id="ai-insights" class="ai-insights">
+            <!-- <h2>AI Spending Insights</h2>
+            <div class="smart-payment-recommendation">
+                <h3>Smart Payment Recommendation</h3>
+                <p><strong>Recommendation:</strong> "Use UPI instead of Wallet balance for this transaction."</p>
+            </div> -->
+
+            <!-- Spending Pattern Graphs & Charts -->
+            <div class="spending-patterns">
+                <h3>Your Spending Patterns</h3>
+                <div class="chart">
+                    {% if chart %}
+                    <img src="data:image/png;base64, {{chart|safe}}">
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        <!-- Recent Transactions Section -->
+        <section id="recent-transactions" class="recent-transactions">
+            <h2>Recent Transactions</h2>
+            <div class="category-spending">
+                <h3>Category-wise Spending</h3>
+                <ul>
+                    <li><strong>Food:</strong> ₹X,XXX</li>
+                    <li><strong>Travel:</strong> ₹X,XXX</li>
+                    <li><strong>Shopping:</strong> ₹X,XXX</li>
+                    <li><strong>Entertainment:</strong> ₹X,XXX</li>
+                </ul>
+            </div>
+            <h3 style="color: crimson; text-transform:uppercase; font-size:30px; margin-top:20px;">Transaction History
+            </h3>
+            <!-- Filter & Search -->
+            <div class="filter-search">
+                <input type="text" placeholder="Search transactions..." id="search-transaction">
+                <select id="category-filter">
+                    <option value="">Filter by Category</option>
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+                <button type="button" class="cta-button">Filter</button>
+            </div>
+
+            <!-- Transaction List -->
+            <div class="transaction-list">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Merchant</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/02/2025</td>
+                            <td>Amazon</td>
+                            <td>₹500</td>
+                        </tr>
+                        <tr>
+                            <td>02/02/2025</td>
+                            <td>Domino's</td>
+                            <td>₹700</td>
+                        </tr>
+                        <tr>
+                            <td>03/02/2025</td>
+                            <td>Uber</td>
+                            <td>₹150</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        
+
+        <!-- Parental Monitoring Section (If Enabled) -->
+        <section id="parental-monitoring" class="parental-monitoring">
+            <h2>Parental Monitoring</h2>
+            <div class="parental-info">
+                <p><strong>Parent-set Spending Limit:</strong> ₹X,XXX</p>
+                <p><strong>Parental Fund Transfers:</strong> ₹X,XXX</p>
+                <p><strong>Remaining Funds:</strong> ₹X,XXX</p>
+            </div>
+        </section>
+
+        <!-- Rewards & Gamification Section -->
+        <section id="rewards-gamification" class="rewards-gamification">
+            <h2>Rewards & Gamification</h2>
+            <div class="rewards-summary">
+                <p><strong>Total Reward Points Earned:</strong> 500</p>
+                <p><strong>Streaks & Challenges:</strong> 10-day saving streak</p>
+            </div>
+
+            <!-- Redeem Points Section -->
+            <div class="redeem-points">
+                <button type="button" class="cta-button">Redeem Points for Discounts</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

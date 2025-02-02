@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Smart Student Wallet</title>
+    <link href="{% static 'css/globals.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{% static 'images/like.png' %}" alt="Logo" style="width: 40px;">  <P>SPEND WISE</P>
+        </div>
+        <nav class="nav-links">
+            <a href="{% url 'login' %}" class="nav-button">Login</a>
+            <a href="{% url 'signup' %}" class="nav-button">Sign Up</a>
+        </nav>
+    </header>
+    <!-- Hero Section (First Fold) -->
+    <section id="hero" class="hero">
+        <div class="hero-image">
+            <img src="{% static 'images/hero-image.png' %}" alt="">
+        </div>
+        <div class="hero-content">
+            <h1>AI-Powered Smart Student Wallet – Track, Save & Spend Wisely!</h1>
+            <p>Get personalized financial insights, manage your spending, and earn rewards with our smart wallet designed just for students.</p>
+            <a href="{% url 'login' %}" class="hero-button">Get Started</a>
+        </div>
+        
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features of the Smart Wallet</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Smart Payment Recommendations</h3>
+                <p>AI suggests the best payment method based on your spending habits and balance availability.</p>
+            </div>
+            <div class="feature">
+                <h3>AI-Based Fraud Detection</h3>
+                <p>Advanced algorithms help detect suspicious activities to keep your wallet secure.</p>
+            </div>
+            <div class="feature">
+                <h3>Gamified Savings & Rewards</h3>
+                <p>Earn points and badges for saving money and sticking to your budget.</p>
+            </div>
+            <div class="feature">
+                <h3>Personalized Spending Tips</h3>
+                <p>Receive tailored tips to improve your financial health and optimize your spending.</p>
+            </div>
+            <div class="feature">
+                <h3>Parental Monitoring (Optional)</h3>
+                <p>For students with parental consent, track spending habits and set savings goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1️⃣ Sign Up & Link Your Bank/UPI</h3>
+                <p>Create your account and link your bank or UPI for seamless transactions.</p>
+            </div>
+            <div class="step">
+                <h3>2️⃣ Track & Categorize Your Expenses</h3>
+                <p>Automatically categorize your expenses for easy tracking.</p>
+            </div>
+            <div class="step">
+                <h3>3️⃣ Get AI-Based Spending Insights</h3>
+                <p>Receive smart insights to help you manage your budget and save more.</p>
+            </div>
+            <div class="step">
+                <h3>4️⃣ Earn Rewards for Saving Money</h3>
+                <p>Earn rewards and badges as you achieve your savings and budgeting goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Students Are Saying</h2>
+        <div class="testimonial">
+            <p>"This wallet has helped me save money and track my spending. The AI insights are amazing!"</p>
+            <h4>- Sarah, 2nd Year Student</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I love the gamified savings feature. It makes budgeting fun and rewarding!"</p>
+            <h4>- Ravi, 3rd Year Student</h4>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p>&copy; 2025 AI Student Wallet. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

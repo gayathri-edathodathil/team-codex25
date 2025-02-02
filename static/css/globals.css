@@ -1,0 +1,881 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 70vh;
+    background-color: #d37fd5;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+.hero-content{
+    text-align: left;
+}
+.hero-content p {
+    font-size: 18px;
+}
+
+.hero-button {
+    background-color:rgb(255, 255, 255);
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+.features {
+    background-color: #fff;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works {
+    background-color: #f9f9f9;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 22%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+    background-color: #fff;
+}
+
+.testimonial {
+    margin: 20px auto;
+    width: 50%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.google-signin-btn {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-signin-btn:hover {
+    background-color: #357AE8;
+}
+
+.google-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.or-divider {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.or-divider span {
+    font-weight: bold;
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.illustration-container {
+    margin-top: 40px;
+}
+
+.wallet-illustration {
+    max-width: 200px;
+    width: 100%;
+}
+/* Dashboard Layout */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-dash{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 100vh;
+    background-color: white;
+    float: left;
+    align-items: center;
+    position: fixed;
+}
+.nav-dash a{
+    width: 30%;
+    height: auto;
+    margin-top: 30px;
+}
+.nav-dash a img{
+    width: 100%;
+    height: auto;
+}
+.nav-dash p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Wallet Overview */
+.wallet-overview {
+    
+}
+.wallet-overview #row1{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.wallet-overview #row1 h2{
+    text-align: left;
+    margin-right: 20px;
+}
+
+.wallet-summary {
+    display: flex;
+    gap: 20px;
+}
+
+.wallet-item{
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.wallet-item div{
+    padding: 20px;
+    text-align: left;
+}
+.wallet-item div h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.wallet-item img{
+    width: 40px;
+    height: 40px;
+}
+
+.wallet-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ai-suggestion {
+    background-color: #1976D2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Transactions Section */
+.recent-transactions {
+    margin-bottom: 30px;
+    margin-top: -30px;
+    background-color: #c7e6ff;
+}
+
+.category-spending ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-spending li {
+    margin: 5px 0;
+}
+
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-list th, .transaction-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.filter-search {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.filter-search input, .filter-search select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* AI Insights */
+.ai-insights {
+    margin-bottom: 30px;
+}
+
+.spending-patterns .chart {
+    width: 100%;
+    height: fit-content;
+}
+.spending-patterns h3 {
+    font-size: 30px;
+    color: #1976D2;
+}
+
+/* Parental Monitoring */
+.parental-monitoring {
+    background-color: #fff3e0;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.rewards-gamification {
+    margin-bottom: 30px;
+}
+
+.rewards-summary {
+    margin-bottom: 20px;
+}
+
+.redeem-points {
+    margin-top: 20px;
+}
+/* Transactions Page Layout */
+.transactions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Filter Section */
+.filters {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-options label {
+    font-weight: bold;
+}
+
+.filter-options select, .filter-options input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Transaction List */
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-list th, .transaction-list td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.transaction-list td strong {
+    color: red;
+}
+
+/* AI Fraud Alerts */
+.ai-fraud-alerts .alert-box {
+    background-color: #ffcc00;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Download Report Section */
+.download-report {
+    margin-top: 40px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.download-buttons .cta-button {
+    background-color: #2196F3;
+}
+
+.download-buttons .cta-button:hover {
+    background-color: #1976D2;
+}
+/* Budget & Savings Page Layout */
+.budget-savings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Monthly Budget Section */
+.monthly-budget {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.budget-item {
+    margin-bottom: 15px;
+}
+
+.budget-item label {
+    font-weight: bold;
+}
+
+.budget-item input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* AI Alerts Section */
+.ai-alerts .alert-box {
+    background-color: #ffcc00;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Savings Streaks & Milestones */
+.savings-streaks {
+    margin-top: 30px;
+}
+
+.savings-streaks p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.savings-streaks strong {
+    color: #2196F3;
+}
+
+/* Leaderboard for Top Savers */
+.savings-leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.savings-leaderboard th, .savings-leaderboard td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.savings-leaderboard th {
+    background-color: #2196F3;
+    color: white;
+}
+
+.savings-leaderboard td {
+    background-color: #f9f9f9;
+}
+/* Profile & Settings Page Layout */
+.profile-settings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Information Section */
+.user-profile {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+.profile-item label {
+    font-weight: bold;
+}
+
+.profile-item input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Bank / UPI Linking Section */
+.bank-upi-linking {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.bank-upi-item {
+    margin-bottom: 15px;
+}
+
+.bank-upi-item label {
+    font-weight: bold;
+}
+
+.bank-upi-item input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Parental Monitoring Section */
+.parental-monitoring {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.parental-item {
+    margin-bottom: 15px;
+}
+
+.parental-item label {
+    font-weight: bold;
+}
+
+/* Security & Privacy Settings Section */
+.security-privacy {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.security-item {
+    margin-bottom: 15px;
+}
+
+.security-item label {
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+/* Help & Support Page Layout */
+.help-support-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* FAQs Section */
+.faqs {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-weight: bold;
+}
+
+.faq-item p {
+    margin-left: 20px;
+}
+
+/* Contact Support Section */
+.contact-support {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.contact-option {
+    margin-bottom: 20px;
+}
+
+.contact-option h3 {
+    font-weight: bold;
+}
+
+.contact-option button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-option button:hover {
+    background-color: #45a049;
+}
+
+/* Video Tutorials Section */
+.video-tutorials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.video-item {
+    margin-bottom: 20px;
+}
+
+.video-item h3 {
+    font-weight: bold;
+}
+
+.video-item iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+/* Admin Panel Styles */
+.admin-panel-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.admin-main-content {
+    width: 100%;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.cta-button:hover {
+    background-color: #45a049;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #e53935;
+}
+
+/* User and Fraud Logs Sections */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.user-actions {
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    flex-grow: 1;  /* Makes the logo area expand */
+    display: flex;
+    justify-content: flex-start;  /* Aligns the logo to the left */
+    gap: 20px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Position nav-links at the right */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: flex-end;  /* Aligns the navigation buttons to the right */
+}
+
+/* Styling for nav buttons */
+.nav-button {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;  /* Change color to match your design */
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ddd; /* Hover effect */
+}

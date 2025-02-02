@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", serif;
+            color: black;
+        }
+        nav{
+            align-content: center;
+            width: 100%;
+            height: 50px;
+        }
+        nav a img{
+            height: 50%;
+            width: auto;
+            padding-left: 15px;
+        }
+        section h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-tab {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            width: 50vh;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 2px 2px 20px rgba(75, 75, 75, 0.468);
+        }
+
+        .login-tab form {
+            margin-top: 10px;
+        }
+
+        .login-tab form label {
+            font-size: 13px;
+        }
+
+        .login-tab form div {
+            margin-top: 15px;
+        }
+        .login-tab form div.row {
+            display: flex;
+            gap: 10px;
+        }
+        .login-tab form div.row input{
+            margin-top: 8px;
+            border-radius: 10px;
+            height: 40px;
+            width: 20vh;
+            border: 0;
+            padding-left: 10px;
+            background-color: rgba(205, 205, 205, 0.473);
+        }
+
+        input {
+            margin-top: 8px;
+            border-radius: 10px;
+            height: 40px;
+            width: 40vh;
+            border: 0;
+            padding-left: 10px;
+            background-color: rgba(205, 205, 205, 0.473);
+        }
+
+        .submit-button {
+            text-align: center;
+        }
+
+        .submit-button input {
+            cursor: pointer;
+            background-color: rgb(100, 100, 100);
+            width: 80px;
+            font-weight: 600;
+            color: white;
+        }
+        .login-tab p{
+            color: red;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .login-tab .signup-line{
+            color: black;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .login-tab .signup-line a{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav><a href="{% url 'index' %}" class="logo-header"><img src="{% static 'images/ZIPIT.png' %}" alt=""></a></nav>
+    <section>
+        <h1>Create an Account</h1>
+        <div class="login-tab">
+            <h1>Signup</h1>
+            <form action="signup" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div>
+                        <label for="first_name">First Name</label><br>
+                        <input type="text" placeholder="First Name" name="first_name"><br>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" placeholder="Last Name" name="last_name"><br>
+                    </div>
+                </div>
+                <div>
+                    <label for="username">Username</label><br>
+                    <input type="text" placeholder="Username" name="username"><br>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Email" name="email"><br>
+                </div>
+                <div>
+                    <label for="email">Phone Number</label><br>
+                    <input type="text" placeholder="Phone Number" name="phone"><br>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" placeholder="Password" name="password"><br>
+                </div>
+                <div class="submit-button">
+                    <input type="submit" name="signup" value="signup">
+                </div>
+            </form>
+            <p class="signup-line">Already a User? <a href="{% url 'login' %}">Login</a></p>
+            {% for msg in messages %}
+            <p>{{msg}}</p>
+            {% endfor %}
+        </div>
+
+    </section>
+</body>
+
+</html>

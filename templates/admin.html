@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - AI-Powered Smart Student Wallet</title>
+    <link href="{% static 'css/globals.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Admin Panel Container -->
+    <div class="admin-panel-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#user-management">User Management</a></li>
+                <li><a href="#fraud-logs">Fraud Detection Logs</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main-content">
+            
+            <!-- User Management Section -->
+            <section id="user-management" class="user-management">
+                <h2>User Management</h2>
+                <div class="user-actions">
+                    <button class="cta-button" onclick="addUser()">Add New User</button>
+                </div>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>U001</td>
+                            <td>Jemimah</td>
+                            <td>jemimah@example.com</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="cta-button" onclick="editUser('U001')">Edit</button>
+                                <button class="cta-button delete" onclick="deleteUser('U001')">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More users can be added here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Fraud Detection Logs Section -->
+            <section id="fraud-logs" class="fraud-logs">
+                <h2>Fraud Detection Logs</h2>
+                <table class="fraud-log-table">
+                    <thead>
+                        <tr>
+                            <th>Log ID</th>
+                            <th>User ID</th>
+                            <th>Suspicious Activity</th>
+                            <th>Amount</th>
+                            <th>Action Taken</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>F001</td>
+                            <td>U001</td>
+                            <td>Unusual Spending</td>
+                            <td>₹5,000</td>
+                            <td>Suspended Account</td>
+                            <td>2025-02-01</td>
+                        </tr>
+                        <!-- More fraud logs can be added here -->
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Settings - AI-Powered Smart Student Wallet</title>
+    <link href="{% static 'css/globals.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Container for the Profile & Settings Page -->
+    <div class="profile-settings-container">
+
+        <!-- User Profile Information Section -->
+        <section id="user-profile" class="user-profile">
+            <h2>User Profile</h2>
+            <form id="profile-form">
+                <div class="profile-item">
+                    <label for="profile-name">Full Name:</label>
+                    <input type="text" id="profile-name" name="profile-name" placeholder="Enter your full name">
+                </div>
+                <div class="profile-item">
+                    <label for="profile-email">Email:</label>
+                    <input type="email" id="profile-email" name="profile-email" placeholder="Enter your email address">
+                </div>
+                <div class="profile-item">
+                    <label for="profile-phone">Phone Number:</label>
+                    <input type="tel" id="profile-phone" name="profile-phone" placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="cta-button">Save Profile</button>
+            </form>
+        </section>
+
+        <!-- Bank / UPI Linking & Management Section -->
+        <section id="bank-upi-linking" class="bank-upi-linking">
+            <h2>Bank / UPI Linking</h2>
+            <div class="bank-upi-item">
+                <label for="upi-id">Link Your UPI ID:</label>
+                <input type="text" id="upi-id" name="upi-id" placeholder="Enter your UPI ID">
+                <button type="button" class="cta-button">Link UPI</button>
+            </div>
+            <div class="bank-upi-item">
+                <label for="bank-account">Link Bank Account:</label>
+                <input type="text" id="bank-account" name="bank-account" placeholder="Enter your Bank Account Number">
+                <button type="button" class="cta-button">Link Bank Account</button>
+            </div>
+        </section>
+
+        <!-- Parental Monitoring Settings Section -->
+        <section id="parental-monitoring" class="parental-monitoring">
+            <h2>Parental Monitoring Settings</h2>
+            <div class="parental-item">
+                <label for="monitoring-enabled">Enable Parental Monitoring:</label>
+                <input type="checkbox" id="monitoring-enabled" name="monitoring-enabled">
+            </div>
+            <div class="parental-item">
+                <label for="parent-email">Parent's Email Address:</label>
+                <input type="email" id="parent-email" name="parent-email" placeholder="Enter your parent's email">
+            </div>
+        </section>
+
+        <!-- Security & Privacy Settings Section -->
+        <section id="security-privacy" class="security-privacy">
+            <h2>Security & Privacy Settings</h2>
+            
+            <!-- Two-Factor Authentication -->
+            <div class="security-item">
+                <label for="two-factor">Enable Two-Factor Authentication:</label>
+                <input type="checkbox" id="two-factor" name="two-factor">
+            </div>
+
+            <!-- Password Change -->
+            <div class="security-item">
+                <label for="new-password">Change Password:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Enter new password">
+            </div>
+            <div class="security-item">
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+            </div>
+            
+            <button type="submit" class="cta-button">Update Settings</button>
+        </section>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

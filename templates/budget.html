@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget & Savings - AI-Powered Smart Student Wallet</title>
+    <link href="{% static 'css/globals.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Container for the Budget & Savings Page -->
+    <div class="budget-savings-container">
+
+        <!-- Monthly Budget Section -->
+        <section id="monthly-budget" class="monthly-budget">
+            <h2>Set Your Monthly Budget</h2>
+            <form id="budget-form">
+                <div class="budget-item">
+                    <label for="food-budget">Food Budget:</label>
+                    <input type="number" id="food-budget" name="food-budget" placeholder="₹ Enter amount">
+                </div>
+                <div class="budget-item">
+                    <label for="shopping-budget">Shopping Budget:</label>
+                    <input type="number" id="shopping-budget" name="shopping-budget" placeholder="₹ Enter amount">
+                </div>
+                <div class="budget-item">
+                    <label for="entertainment-budget">Entertainment Budget:</label>
+                    <input type="number" id="entertainment-budget" name="entertainment-budget" placeholder="₹ Enter amount">
+                </div>
+                <button type="submit" class="cta-button">Save Budget</button>
+            </form>
+        </section>
+
+        <!-- AI Alerts for Budget Exceeding -->
+        <section id="ai-alerts" class="ai-alerts">
+            <h2>AI Alerts</h2>
+            <div class="alert-box">
+                <p><strong>Alert:</strong> "You have exceeded your food budget of ₹3,000! Try cutting back on eating out." </p>
+            </div>
+        </section>
+
+        <!-- Savings Streaks & Milestones -->
+        <section id="savings-streaks" class="savings-streaks">
+            <h2>Your Savings Streaks & Milestones</h2>
+            <div class="streaks">
+                <p><strong>Current Streak:</strong> 5 days of saving ₹500 daily!</p>
+                <p><strong>Milestone Achieved:</strong> "You saved ₹10,000 this month! 🎉 Keep it up!"</p>
+            </div>
+        </section>
+
+        <!-- Leaderboard for Top Savers -->
+        <section id="savings-leaderboard" class="savings-leaderboard">
+            <h2>Top Savers Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Savings (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>₹50,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>₹45,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>James Lee</td>
+                        <td>₹40,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
